@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>TuneSync</title>
+    
+    <link rel="manifest" href="manifest.json" />
+    <link rel="shortcut icon" type="image/png" href="images/icons/192.png"/>
+    
+    <meta name="description" content="Spotify Music Visualizer">
+    
+    <meta name="theme-color" content="#75b798"/>
+    <link rel="apple-touch-icon" href="images/icons/192.png">
+    
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+	<link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+ 
+  <body class="bg-dark">
+	<div class="container-fluid text-center">
+      <div class="row">
+	    <h1 id="name">TuneS<span class="pinkText">y</span>nc</h1>
+	    <h1 id="subtitle" class="fw-light">Visualize <i class="bi bi-soundwave pinkText"></i> Melodies</h1>
+      </div>
+	  <div class="row" id="marginTop">
+	    <div class="col text-center">
+          <button id="login" onclick="login()" class="btn btn-block">Login to Spotify</button>
+		  <div class="mt-4 label">You can view recently played music and save customized visualizers to use again</div>
+	    </div>
+	    <div class="col">
+          <button id="guest" onclick="guest()" class="btn btn-block">Continue as Guest</button>
+	  	  <div class="mt-4 label">You cannot save customized visualizers or use playback features within the app</div>
+	    </div>
+	  </div>
+	  <div class="row mt-5">
+	  	  <div class="label">Note: To use offline functionality, you must choose one of the above options when online. After doing so, feel free to go offline</div>
+	    </div>
+	</div>
+  </body>
+</html>
