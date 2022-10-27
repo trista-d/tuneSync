@@ -1,5 +1,7 @@
 # tuneSync
 
+![TuneSync](tunesync_cover.png)
+
 - final project for a high school course called Web development 12
 - A music visualizer using Firebase and the Spotify API
 - Written as a progressive web app with HTML, CSS, and JavaScript
